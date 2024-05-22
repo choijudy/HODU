@@ -1,33 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HODU</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=115f83dd9a4efd2469cd2a49ced74a6e"></script>
 </head>
 <body>
-    <header>
-        <div class = "logo">
-            <img src="logo.png" alt="HODU Logo">
+<header>
+    <nav class="navigation">
+        <div class="logo">
+            <img src="img/logo.png" alt="HODU Logo">
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#" class="download-btn">Download</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#" class="download_btn">Download</a></li>
+        </ul>
+    </nav>
+    <section class="intro">
         <div class="content">
-            <h1>Lorem Ipsum is simply dummy text of the printing and</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
-            <a href="#" class="download-btn">Download</a>
+            <h1>Lorem Ipsum is simply<br>dummy text of the printing and</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and<br>typesetting industry.<br>Lorem Ipsum has been the industry's standard dummy text<br>ever since the 1500s, when an unknown</p>
+            <a href="#" class="download_btn">Download</a>
         </div>
-        <div class="image-container">
-            <img src="cat1.png" alt="Cat with a box on its head">
+        <div class="header_cat">
+            <img src="img/header_cat.png" alt="Header Cat">
         </div>
-    </main>
+    </section>
+</header>
+<main>
+    <section class="gallery">
+        <div class="gallery_main">
+            <img src="img/cat.png" alt="Cat image">
+            <div class="gallery_content1">
+                <h2>Lorem Ipsum is simply<br>dummy text of the printing<br>and dummy text</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br>industry.</p>
+            </div>
+        </div>
+        <div class="gallery_content2">
+            <h2>dummy text of the printing and dummy</h2>
+            <p>Lorem lpsum is simply dummy text of the printing and typesetting industry.<br>Lorem lpsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+        </div>
+        <div class="gallery_grid">
+            <div class="gallery_grid_item"><img src="img/cat1.png" alt="Cat 1"></div>
+            <div class="gallery_grid_item"><img src="img/cat2.png" alt="Cat 2"></div>
+            <div class="gallery_grid_item"><img src="img/cat3.png" alt="Cat 3"></div>
+            <div class="gallery_grid_item"><img src="img/cat4.png" alt="Cat 4"></div>
+            <div class="gallery_grid_item"><img src="img/cat5.png" alt="Cat 5"></div>
+            <div class="gallery_grid_item"><img src="img/cat6.png" alt="Cat 6"></div>
+        </div>
+    </section>
+    <section class="more">
+        <h2>Continue exploring HODU</h2>
+        <a href="#" class="more_btn">Show more</a>
+    </section>
+    <div class="line">
+        <hr>
+    </div>
+    <section class="map">
+        <h2>Where you'll be</h2>
+        <p>330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+        <div id="map"></div>
+    </section>
+    <section class="subscribe">
+        <div class="sub_content">
+            <h2>Subscribe to our Blog post</h2>
+            <p>lorem lpsum is simply dummy text of the printing and typesetting industry.</p>
+            <p>lorem lpsum has been the industry's standard dummy text</p>
+        </div>
+        <form id="sub_form">
+            <div class="sub_container">
+                <div class="icon"><img src="img/mail.png" alt="Mail icon"></div>
+                <input type="email" placeholder="Enter your e-mail address">
+                <button type="submit">Subscribe</button>
+            </div>
+        </form>
+    </section>
+</main>
+<footer>
+    <div class="footer_content">
+        <div class="footer_img"><img src="img/footer_cat.png" alt="Footer Cat"></div>
+        <div class="top"><img src="img/scroll-top-btn.png" alt="To Top Button" id="top_btn"></div>
+    </div>
+    <div class="footer_icon">
+        <div class="logo">
+            <img src="img/logo.png" alt="HODU Logo">
+        </div>
+        <ul>
+            <li><img src="img/icon-blog.png" alt="Blog Icon"></li>
+            <li><img src="img/icon-insta.png" alt="Instagram Icon"></li>
+            <li><img src="img/icon-facebook.png" alt="Facebook Icon"></li>
+            <li><img src="img/icon-youtube.png" alt="Youtube Icon"></li>
+        </ul>
+    </div>
+</footer>
+<div id="modal" class="modal">
+    <div class="modal_content">
+        <img src="img/modal_cat.png" alt="Modal Cat">
+        <h2>Thank you!</h2>
+        <p>Lorem lpsum is simply dummy text of the printing industry.</p>
+        <button id="close_modal">OK! I Love HODU</button>
+    </div>
+</div>
+<script src="map.js"></script>
+<script src="modal.js"></script>
+<script src="hover.js"></script>
 </body>
 </html>
